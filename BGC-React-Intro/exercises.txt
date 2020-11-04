@@ -1,0 +1,9 @@
+Exercise 1:
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+
+
+Exercise 2:
+
+<link rel="stylesheet" href="helloworld.css">
