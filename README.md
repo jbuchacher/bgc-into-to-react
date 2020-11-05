@@ -64,13 +64,10 @@ See below screen capture to follow along:
 
 ### Running the App
 
-1. To run the app, you will need to
-
-In the same terminal window run the following commands:
-
-`cd ~/Desktop/my-app`
-
-`npm start`
+1. To run the app, first open the terminal app.
+1. In the terminal app, run the following command: `cd ~/Desktop/my-app`. This changes directories to where your React app lives.
+1. Run another command in the terminal: `npm start`. This will use the `npm` tool to start running your app.
+1. When you are done, you can use CTRL+C to quit the running command line application. Or, you can close your terminal program.
 
 See below screen capture to follow along:
 
