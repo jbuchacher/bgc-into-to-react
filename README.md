@@ -75,4 +75,4 @@ See below screen capture to follow along:
 
 ### Viewing the App
 
-Running npm start should have launched your browser window to a URL such as http://localhost:3000. If it didn't, you can navigate to this URL in your web browser and you should see the default React app.
+Running `npm start` should have launched your browser window to a URL such as http://localhost:3000. If it didn't, you can navigate to this URL in your web browser and you should see the default React app.
