@@ -1,9 +1,16 @@
 Exercise 1:
+In a Terminal (on Mac) or Powershell (on Windows):
 
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+cd ~/Downloadscd BGC-React-Intro
+
+[MAC]: open helloworld.html[WINDOWS]: Start-Process "helloworld.html"
 
 
 
 Exercise 2:
 
-<link rel="stylesheet" href="helloworld.css">
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+Add the line above to helloworld.html inside the <body> tags.
+
+
