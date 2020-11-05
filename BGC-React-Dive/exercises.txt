@@ -1,3 +1,179 @@
-Exercise 1:
+*** Exercise: Import React
 
-class HelloWorld extends React.Component { render() {  return <p>Hello {this.props.name}!</p> }}
+import React from 'react';
+
+
+
+
+*** Exercise: Add the React Component
+
+class HelloWorld extends React.Component {
+  render() {
+    return (
+    <p>
+      Hello {this.props.name}!
+    </p>
+    );
+  }
+}
+
+In App.js, add this React component to the end.
+
+
+
+
+*** Exercise: Use a Component
+
+<HelloWorld name= "Your Name" />
+
+In App.js, replace the <p> tags, and everything between them, with this React element.
+
+
+
+
+*** Exercise: Add Lots of Components
+
+<HelloWorld name= "Another Name" /><HelloWorld name= "One More Name" />
+
+In App.js, add these additional React elements also.
+
+
+
+
+*** Exercise: Add homepage to package.json
+
+"homepage": "https://myusername.github.io/my-app",
+
+In package.json, add this property.
+
+
+
+
+*** Exercise: Install gh-pages and add deploy to scripts in package.json
+
+In a Terminal (on Mac) or Powershell (on Windows):
+
+npm install --save gh-pages
+
+------
+
+"scripts": {
++ "predeploy": "npm run build",
++ "deploy": "gh-pages -d build",
+"start": "react-scripts start",
+"build": "react-scripts build",
+
+In package.json, add these deploy scripts.
+
+
+
+
+======== OPTIONAL =========
+
+*** Exercise: Set State
+
+constructor(props) {
+  super(props);
+  this.state = { color: "grey" };
+}
+
+In App.js, add this constructor in the HelloWorld React component (under "class HelloWorld…").
+
+
+
+
+*** Exercise: Use the State
+
+style={{color:this.state.color}}
+
+In App.js, find the <p> element in the HelloWorld render() function and add this color style. Now the full line should look like this:
+
+<p style={{color:this.state.color}}>
+
+
+
+
+*** Exercise: Change the State
+
+changeColor = () => {
+  this.setState({color: "orange"});
+}
+
+In App.js, add this function in the HelloWorld component (under "class HelloWorld…").
+
+
+
+
+
+*** Exercise: Add a button
+
+<button type="button" onClick={this.changeColor}>Change color</button>
+
+In App.js, find the <p> element in the HelloWorld render() function and add this button below.
+
+
+
+
+
+
+
+
+
+
+
+***FINAL SOLUTION
+
+If you've followed all the exercises above to modify App.js, at the end, the contents should look something like this:
+
+
+
+import logo from './logo.svg';
+import './App.css';
+import React from 'react';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <HelloWorld name= "Michelle" />
+        <HelloWorld name= "Josh" />
+        <HelloWorld name= "Ian" />
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+class HelloWorld extends React.Component {
+
+  changeColor = () => {
+    this.setState({color: "orange"});
+  }
+
+  constructor(props) {
+    super(props);
+    this.state = { color: "grey" };
+  }
+
+  render() {
+    return (
+    <p style={{color:this.state.color}}>
+      Hello {this.props.name}!
+      <br />
+      <button type="button" onClick={this.changeColor}>Change color</button>
+    </p>
+
+    );
+  }
+
+}
