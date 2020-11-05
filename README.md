@@ -52,7 +52,9 @@ On Windows, you can open the terminal application by searching for "PowerShell" 
 
 ### Install `create-react-app`
 
-Open your terminal application and run the following command:
+Open your terminal application and run the following commands:
+
+`cd ~/Desktop`
 
 `npx create-react-app my-app`
 
@@ -64,9 +66,11 @@ See below screen capture to follow along:
 
 1. To run the app, you will need to
 
-In the same terminal window run the following command:
-cd my-app
-npm start
+In the same terminal window run the following commands:
+
+`cd ~/Desktop/my-app`
+
+`npm start`
 
 See below screen capture to follow along:
 
